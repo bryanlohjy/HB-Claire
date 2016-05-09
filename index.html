@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>I AM DORF || Claire's new friend</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+  <script src="js/jquery-1.12.3.js"></script>
+
+  <script src="js/adjectives.js"></script>
+
+  <script src="js/nouns.js"></script>
+
+
+  </head>
+  <body>
+
+
+
+  <!-- Refresh Button -->
+  <div id="wrapper">
+    <div id="message">
+      <p>Claire.</p>
+      <p>Hey, hi and hello.</p>
+      <p>I'd like you to meet Dorf, your new and *extremely* sophisticated friend. It can't do very much but be open about its feelings and yell incoherent strings of words at the moment, but I know you will both get along fantastically.</p>
+      <p>Happy Birthday,</p>
+      <p>Bryan</p>
+    </div>
+
+    <button id="button" type ="button" onclick="autorun()">*POKE DORF*</button>
+    <div id="dorf">
+      <div id="sentence_1"></div>
+      <div id="sentence_2"></div>
+    </div>
+  </div>
+
+ 
+
+
+  <script type="text/javascript">
+   function autorun()
+   {
+    
+    // selecting random noun
+    var selected_noun = noun_list[Math.floor(Math.random()*noun_list.length)];
+
+    // selecting random adjective
+    var selected_adjective_1 = adjective_list[Math.floor(Math.random()*adjective_list.length)];
+    var selected_adjective_2 = adjective_list[Math.floor(Math.random()*adjective_list.length)];
+    var selected_adjective_3 = adjective_list[Math.floor(Math.random()*adjective_list.length)];
+
+    $('#dorf').css("border","2px solid gray");
+
+    $('#sentence_1').html("Hey Claire, I feel " + selected_adjective_1 + " and " + selected_adjective_2 + " at the moment.");
+
+    $('#sentence_2').html(selected_adjective_3 + " " + selected_noun + "!!!");
+
+  }
+
+  </script>
+
+  </body>
+</html>

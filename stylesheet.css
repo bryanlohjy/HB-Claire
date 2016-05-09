@@ -1,0 +1,50 @@
+#message{
+	text-align: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 2px solid gray;
+	font-size: 15px;
+}
+
+#button{
+	font-size: 20px;
+}
+
+
+#dorf{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 20%;
+	margin-right: 20%;
+
+	text-align:center;
+	font-size: 15px;
+	font-family: cursive, sans-serif;
+}
+
+
+
+#sentence_1{
+	text-align: center;
+}
+
+#wrapper{
+	text-align: center;
+}
+
+#sentence_2{
+	font-style: italic;
+	font-size: 25px;
+	font-weight: bold;
+
+}
